@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Menu - Restoran Rasa Nusantara</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            /* Gambar latar belakang sama seperti halaman lain */
+            background: url('es_campur_jawa.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #4a2c2a;
+        }
+
+        .overlay {
+            background-color: transparent;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #9a3b1e;
+            padding: 18px 0;
+            text-align: center;
+            border-radius: 4px;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            color: #fff8e8;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Kotak putih tipis sama persis gaya halaman lain */
+        .hero {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 35px;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .hero h2 {
+            text-align: center;
+            color: #5c2e1a;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+
+        /* Gaya tabel */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 17px;
+        }
+
+        table th {
+            background-color: #9a3b1e;
+            color: #fff8e8;
+            padding: 12px;
+            text-align: left;
+        }
+
+        table td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Warna selang-seling agar tabel lebih enak dilihat */
+        table tr:nth-child(even) {
+            background-color: rgba(243, 233, 220, 0.6);
+        }
+    </style>
+</head>
+<body>
+<div class="overlay">
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery & Testimoni</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Daftar Menu Makanan & Minuman</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Hidangan</th>
+                    <th>Asal Daerah</th>
+                    <th>Harga (Rp)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Nasi Gudeg</td>
+                    <td>Yogyakarta</td>
+                    <td>25.000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Rendang Sapi</td>
+                    <td>Sumatera Barat</td>
+                    <td>35.000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Soto Kudus</td>
+                    <td>Jawa Tengah</td>
+                    <td>22.000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Ikan Bakar Jimbaran</td>
+                    <td>Bali</td>
+                    <td>45.000</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Es Teh Manis</td>
+                    <td>Seluruh Indonesia</td>
+                    <td>5.000</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Es Campur</td>
+                    <td>Jawa</td>
+                    <td>12.000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</div>
+</body>
+</html>

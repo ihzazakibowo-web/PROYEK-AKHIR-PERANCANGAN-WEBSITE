@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste of the Archipelago - Gallery & Testimonials</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+        }
+        .testimoni {
+            background-color: #f9f2e9;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery & Testimonials</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Galeri Restoran</h2>
+
+        <!-- Bagian Gambar Galeri -->
+        <div class="gallery-grid">
+            <img src="gudeg.jpg" alt="Hidangan Gudeg">
+            <img src="rendang_sapi.jpg" alt="Hidangan Rendang">
+            <img src="soto_kudus.jpg" alt="Soto Kudus">
+            <img src="ikan_bakar_jimbaran.jpg" alt="Ikan Bakar Jimbaran">
+            <img src="es_teh_manis.jpg" alt="Es Teh Manis">
+            <img src="es_campur_jawa.jpg" alt="Es Campur Jawa">
+        </div>
+
+        <!-- Bagian Testimoni -->
+        <h2 style="margin-top: 2rem;">Testimoni Pelanggan</h2>
+        <div class="testimoni">
+            <p>"Rasanya otentik sekali, pelayanannya juga ramah. Pasti akan kembali lagi!"</p>
+            <p><strong> Budi, Semarang</strong></p>
+        </div>
+        <div class="testimoni">
+            <p>"Tempatnya nyaman dan bersih. Cocok untuk makan bersama keluarga."</p>
+            <p><strong> Siti, Demak</strong></p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri & Testimoni - Restoran Rasa Nusantara</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: url('rendang_sapi.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #4a2c2a;
+        }
+
+        .overlay {
+            background-color: transparent;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #9a3b1e;
+            padding: 18px 0;
+            text-align: center;
+            border-radius: 4px;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            color: #fff8e8;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Kotak putih tipis sama persis gaya halaman lain */
+        .hero {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 35px;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .hero h2 {
+            text-align: center;
+            color: #5c2e1a;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+
+        /* Tata letak galeri gambar */
+        .galeri {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .galeri img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        /* Gaya testimoni */
+        .testimoni h3 {
+            color: #5c2e1a;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .kotak-testimoni {
+            background-color: rgba(255,255,255, 0.85);
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .nama-pelanggan {
+            text-align: right;
+            margin-top: 8px;
+            font-weight: bold;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+<div class="overlay">
+</div>
+</body>
+</html>

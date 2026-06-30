@@ -1,0 +1,192 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taste of the Archipelago - Kontak & Reservasi</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f8f5f2; /* Latar polos tanpa gambar */
+      color: #4a2c2a;
+      padding: 20px;
+    }
+
+    /* Navigasi */
+    nav {
+      background-color: #9a3b1e;
+      padding: 18px 0;
+      text-align: center;
+      border-radius: 4px;
+      margin-bottom: 40px;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav a {
+      color: #fff8e8;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Kotak konten */
+    .container {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 35px 30px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      line-height: 1.8;
+    }
+
+    .container h2 {
+      text-align: center;
+      color: #5c2e1a;
+      margin-bottom: 25px;
+      font-size: 24px;
+    }
+
+    .container h3 {
+      color: #5c2e1a;
+      margin: 25px 0 12px 0;
+      font-size: 20px;
+    }
+
+    /* Gaya formulir */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 15px;
+    }
+
+    form label {
+      font-weight: 500;
+    }
+
+    form input,
+    form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    form button {
+      background-color: #9a3b1e;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 4px;
+      font-size: 17px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    form button:hover {
+      background-color: #7a2f18;
+    }
+
+    /* Gaya pesan berhasil */
+    #pesanBerhasil {
+      display: none;
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+      border-radius: 6px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="gallery.html">Gallery & Testimoni</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>Kami siap melayani pertanyaan dan reservasi Anda.</p>
+
+    <h3>Informasi Restoran</h3>
+    <p><strong>Alamat:</strong> Jl. Diponegoro No. 123, Demak, Jawa Tengah</p>
+    <p><strong>Telepon:</strong> (0291) 123456</p>
+    <p><strong>WhatsApp:</strong> +62 812-3456-7890</p>
+    <p><strong>Email:</strong> rasasanusantara@gmail.com</p>
+    <p><strong>Jam Operasional:</strong> Setiap Hari 09.00 – 22.00 WIB</p>
+
+    <h3>Formulir Reservasi</h3>
+
+    <!-- Formulir -->
+    <form id="formReservasi">
+      <label>Nama Lengkap</label>
+      <input type="text" placeholder="Masukkan nama Anda" required>
+
+      <label>Email</label>
+      <input type="email" placeholder="Masukkan email Anda" required>
+
+      <label>Nomor HP</label>
+      <input type="tel" placeholder="08xxxxxxxxxx" required>
+
+      <label>Jumlah Tamu</label>
+      <input type="number" min="1" max="20" placeholder="Jumlah orang" required>
+
+      <label>Tanggal Reservasi</label>
+      <input type="date" required>
+
+      <label>Pesan Tambahan</label>
+      <textarea rows="3" placeholder="Tulis pesan..."></textarea>
+
+      <button type="submit">Submit Reservation</button>
+    </form>
+
+    <!-- Pesan konfirmasi -->
+    <div id="pesanBerhasil">
+      ✅ Selamat! Anda berhasil melakukan reservasi. <br>
+      Kami akan segera menghubungi Anda untuk konfirmasi lebih lanjut.
+    </div>
+
+  </div>
+
+  <!-- Kode agar pesan muncul setelah dikirim -->
+  <script>
+    const form = document.getElementById('formReservasi');
+    const pesan = document.getElementById('pesanBerhasil');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // Mencegah halaman refresh
+      form.style.display = 'none'; // Sembunyikan formulir
+      pesan.style.display = 'block'; // Tampilkan pesan berhasil
+    });
+  </script>
+
+</body>
+</html>
